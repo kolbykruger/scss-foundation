@@ -1,0 +1,99 @@
+// Fonts
+$font-100: proxima-nova;
+$font-200: 'GT Super Display';
+$font-300: Roboto;
+$system-font-stack: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+
+$font-primary: $font-100, $system-font-stack;
+$font-secondary: $font-200, $system-font-stack;
+
+// Headings
+$heading-scale: 1.414; //Augmented Fourth
+$heading-min-width: 38rem;
+$heading-max-width: 80rem;
+$heading-margin-top: #{$heading-scale}em;
+$heading-margin-bottom: 0.5em;
+
+// Copy
+$copy-color: #38444c;
+$copy-width: 40em;
+$copy-max-size: 1.25rem;
+$copy-min-size: 1.125rem;
+$copy-line-height: 1.8;
+$copy-font-weight: 300;
+
+// Mobile Copy
+$mobile-copy-color: #484848;
+$mobile-copy-line-height: 1.8;
+$mobile-copy-font-weight: 400;
+
+// Variable Font Sizing
+@mixin fs-10 {font-size: 0.625rem;}
+@mixin fs-12 {font-size: 0.75rem;}
+@mixin fs-14 {font-size: 0.875rem;}
+@mixin fs-16 {font-size: 1.0rem;}
+@mixin fs-18 {@include fluid-type('font-size', $copy-width, $page-width, 1.0rem, 1.125rem);}
+@mixin fs-20 {@include fluid-type('font-size', $copy-width, $page-width, 1.0rem, 1.25rem);}
+@mixin fs-22 {@include fluid-type('font-size', $copy-width, $page-width, 1.0rem, 1.375rem);}
+@mixin fs-24 {@include fluid-type('font-size', $copy-width, $page-width, 1.25rem, 1.5rem);}
+@mixin fs-26 {@include fluid-type('font-size', $copy-width, $page-width, 1.25rem, 1.625rem);}
+@mixin fs-28 {@include fluid-type('font-size', $copy-width, $page-width, 1.5rem, 1.75rem);}
+@mixin fs-30 {@include fluid-type('font-size', $copy-width, $page-width, 1.5rem, 1.875rem);}
+@mixin fs-32 {@include fluid-type('font-size', $copy-width, $page-width, 1.75rem, 2.0rem);}
+@mixin fs-36 {@include fluid-type('font-size', $copy-width, $page-width, 2rem, 2.25rem);}
+@mixin fs-40 {@include fluid-type('font-size', $copy-width, $page-width, 1.5rem, 2.5rem);}
+@mixin fs-50 {@include fluid-type('font-size', $copy-width, $page-width, 1.5rem, 3.125rem);}
+@mixin fs-55 {@include fluid-type('font-size', $copy-width, $page-width, 1.5rem, 3.5rem);}
+@mixin fs-60 {@include fluid-type('font-size', $copy-width, $page-width, 1.5rem, 3.75rem);}
+
+// Heading Styles
+h1, h2, h3, h4, h5 {
+    font-family: $font-primary;
+    width: 100%;
+    margin: $heading-margin-top 0 $heading-margin-bottom;
+}
+
+h1 {
+    $h1-max: modular-scale(4);
+    $h1-min: modular-scale(2);
+    @include fluid-type('font-size', $heading-min-width, $heading-max-width, $h1-min, $h1-max);
+    font-weight: 600;
+
+    &.-center {text-align: center;}
+    &.-alt {}
+    &.-fix {
+        margin: 0;
+        padding: $heading-margin-top 0 $heading-margin-bottom;
+    }
+}
+
+h2 {
+    $h2-max: modular-scale(3);
+    $h2-min: modular-scale(2);
+    @include fluid-type('font-size', $heading-min-width, $heading-max-width, $h2-min, $h2-max);
+    font-weight: 600;
+
+    &.-center {text-align: center;}
+    &.-alt {}
+}
+
+h3 {
+    $h3-max: modular-scale(2);
+    $h3-min: modular-scale(1);
+    @include fluid-type('font-size', $heading-min-width, $heading-max-width, $h3-min, $h3-max);
+    font-weight: 500;
+}
+
+h4{
+    $h4-max: modular-scale(1);
+    $h4-min: modular-scale(1);
+    @include fluid-type('font-size', $heading-min-width, $heading-max-width, $h4-min, $h4-max);
+    font-weight: 500;
+}
+
+h5{
+    $h5-max: modular-scale(1);
+    $h5-min: modular-scale(1);
+    @include fluid-type('font-size', $heading-min-width, $heading-max-width, $h5-min, $h5-max);
+    font-weight: 500;
+}

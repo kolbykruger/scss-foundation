@@ -1,0 +1,24 @@
+nav {
+
+    .contents {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-flow: row wrap;
+    }
+
+    .item {
+        position: relative;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        transition: $transition-100;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+// Reset Stylesheet (based on http://meyerweb.com/eric/tools/css/reset/)
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, div, h1, h2, h3, h4, h5, h6, img {
+    display:block;
+}
+
+html {
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, :before, :after {
+    margin:0;
+    padding:0;
+    outline:0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1;
+}
+
+body {
+    font-size: 1rem;
+    min-height:100vh;
+    font-display: optional;
+    font-smoothing: antialiased;
+    text-rendering: auto;
+    line-height:1.5;
+    position:relative;
+}
+
+ol, ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+ol li, ul li {
+    line-height: inherit;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+textarea, input, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
